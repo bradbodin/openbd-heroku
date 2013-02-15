@@ -1,0 +1,81 @@
+
+]--- Logging Started ------[
+06/10/12 13:44.49: RunTimeError Directory=[/Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/temp/rtelogs], Max=[100]
+06/10/12 13:44.49: BlueDragon WorkingDirectory=[/Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work]
+06/10/12 13:44.49: BlueDragon TempDirectory=[/Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/temp]
+06/10/12 13:44.49: dbPool: Initialised using: OpenBD DBPoolManager $Revision: 1.1 $
+06/10/12 13:44.49: OutgoingMailServer started mainDirectory=/Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/cfmail
+06/10/12 13:44.49: CollectionFactory.init(): no <cfcollection> found in configuration
+06/10/12 13:44.49: BlueDragon server is starting up...
+06/10/12 13:44.49: Product Version: 2.1
+06/10/12 13:44.49: Build date: 2012-10-06 04:03:24 GMT
+06/10/12 13:44.49: aw20org: null
+06/10/12 13:44.49: tagChecker loaded: 140 tags
+06/10/12 13:44.49: cfmlFileCache Configuration. Caching=1000 files; trusted cache=false
+06/10/12 13:44.49: cfmlFileCache.loadCustomTagMappings [CF_] >> [/WEB-INF/customtags]
+06/10/12 13:44.49: cfmlFileCache.loadCFMappings: no CF mappings defined.
+06/10/12 13:44.49: PluginManager Auto Discovery (openbdplugin-XXXX.jar) ...
+06/10/12 13:44.49: ... found: 0 plugins
+06/10/12 13:44.49: cfEngine: Using default character encoding utf-8
+06/10/12 13:44.49: cfEngine: WebResourcePath /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/webresources
+06/10/12 13:44.49: cfEngine: server.system.nativelibdir=[/WEB-INF/bin/x64/]
+06/10/12 13:44.49: queryBatchServer started: /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/cfquerybatch
+06/10/12 13:44.49: querySlowLog tracking SQL activity over: 1 seconds
+06/10/12 13:44.49: CFQUERY Connection pool validation queries: ENABLED
+06/10/12 13:44.49: MemoryDiskCache.function: MaxSize: 100
+06/10/12 13:44.49: MemoryDiskCache.function: Directory set: /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/cache-function
+06/10/12 13:44.49: MemoryDiskCache.function: Directory cleaned
+06/10/12 13:44.49: MemoryDiskCache.default: MaxSize: 25
+06/10/12 13:44.49: MemoryDiskCache.default: Directory set: /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/cache-default
+06/10/12 13:44.49: MemoryDiskCache.default: Directory cleaned
+06/10/12 13:44.49: MemoryDiskCache.cfquery: MaxSize: 200
+06/10/12 13:44.49: MemoryDiskCache.cfquery: Directory set: /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/cache-cfquery
+06/10/12 13:44.49: MemoryDiskCache.cfquery: Directory cleaned
+06/10/12 13:44.49: CFIMAP Caching Engine Initialised.
+06/10/12 13:44.49: cfChart: storage=file; size=0
+06/10/12 13:44.49: ScheduleEngine: Started. Initial Tasks=0
+06/10/12 13:44.49: scheduleEngine started; logfile=/Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/cfschedule/schedule.log
+06/10/12 13:44.49: PlugIn.Load.Installed: org.alanwilliamson.openbd.plugin.spreadsheet.SpreadSheetExtension; SpreadSheet; Version=1.2011.11.4
+06/10/12 13:44.49: PlugIn.Load.Installed: org.alanwilliamson.openbd.plugin.cfsmtp.SmtpExtension; CFSMTP; Version=1.2011.11.4
+06/10/12 13:44.49: [LoginPlugin] <server>.<plugin>.<login>.<userfield>: no userfield specified
+06/10/12 13:44.49: PlugIn.Load.Installed: org.aw20.plugin.login.LoginExtension; LoginExtension; Version=1.2011.11.4
+06/10/12 13:44.49: PlugIn.Load.Installed: org.alanwilliamson.openbd.plugin.crontab.CronExtension; CronTab; Version=1.2011.11.4
+06/10/12 13:44.49: PlugIn.Load.Installed: com.bluedragon.mongo.MongoExtension; MongoExtension; Version=1.2011.11.4
+06/10/12 13:44.49: PlugIn.Load.Installed: org.alanwilliamson.openbd.plugin.salesforce.SalesForceExtension; SalesForce; Version=1.2177
+06/10/12 13:44.49: PlugIn.Load.Installed: com.bluedragon.vision.VisionExtension; Vision; Version=1.2177
+06/10/12 13:44.49: cfApplicationManager.DefaultClientStorage=[cookie]; J2EE Sessions=false
+06/10/12 13:44.49: MemoryDiskCache.cfcachecontent: MaxSize: 50
+06/10/12 13:44.49: MemoryDiskCache.cfcachecontent: Directory set: /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/cache-cfcachecontent
+06/10/12 13:44.49: MemoryDiskCache.cfcachecontent: Directory cleaned
+06/10/12 13:44.49: cfSCRIPT Registered: language=java; class=org.alanwilliamson.lang.java.cfSCRIPTJava
+06/10/12 13:44.49: cfSCRIPT Registered: language=javascript; class=org.alanwilliamson.lang.javascript.cfSCRIPTJavascript
+06/10/12 13:44.49: expressionEngine loaded: 727 functions
+06/10/12 13:44.49: cfEngine: [server.system.debug] Show Debug output on error? true
+06/10/12 13:44.49: cfEngine: [server.debugoutput.enabled] Show Debugger output? false
+06/10/12 13:44.49: cfEngine: [server.system.strictarraypassbyreference] Strict Mode: ArrayPassByReference? false
+06/10/12 13:44.49: cfEngine: [server.system.functionscopedvariables] Strict Mode: FunctionScopedVariables? false
+06/10/12 13:44.49: cfEngine: [server.system.assert] Assertions disabled
+06/10/12 13:44.49: cfEngine: [server.system.formurlcombined] Combined Form/Url Scope? false
+06/10/12 13:44.49: cfEngine: [server.system.legacyformvalidation] Legacy server side form validation? true
+06/10/12 13:44.49: cfEngine: JSON Encoding Defaults: server.system.jsoncase=maintain; server.system.jsondate=long
+06/10/12 13:44.49: BlueDragon has initialised. Ready for requests.
+06/10/12 13:44.49: /Server.cfc not available: /Server.cfc; exception:A request was made to a resource that could not be located
+06/10/12 15:20.44: RTE: /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/temp/rtelogs/bderror-2012-10-06-152044_2719864533807458209.html
+06/10/12 15:20.49: RTE: /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/temp/rtelogs/bderror-2012-10-06-152049_4736808513686592448.html
+06/10/12 15:21.10: RTE: /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/temp/rtelogs/bderror-2012-10-06-152110_9126528700104898383.html
+06/10/12 15:26.45: RTE: /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/temp/rtelogs/bderror-2012-10-06-152645_7709635272461340727.html
+06/10/12 15:26.49: RTE: /Users/heath_provost/Documents/Development/openbd/repos/jqtouch-testing/WEB-INF/bluedragon/work/temp/rtelogs/bderror-2012-10-06-152649_1603191577092398364.html
+06/10/12 15:45.13: BlueDragon is being shut down ... 
+06/10/12 15:45.13: OutgoingMailServer: Shutdown
+06/10/12 15:45.13: -] mailSender: thread stop.
+06/10/12 15:45.13: cfmlFileCache was flushed
+06/10/12 15:45.13: cfmlFileCache was shutdown
+06/10/12 15:45.13: -] cfQueryBatchServer: thread stop.
+06/10/12 15:45.13: -] cfQueryBatchServer: Shutdown
+06/10/12 15:45.13: CFIMAP Caching Engine closed open connections
+06/10/12 15:45.13: cfApplicationManager has been shutdown
+06/10/12 15:45.13: OutgoingMailServer: Shutdown
+06/10/12 15:45.13: All logging has been shutdown
+06/10/12 15:45.13: dbPool: All database connections have been closed.
+06/10/12 15:45.13: CacheFactory: All Cache Regions shutdown
+06/10/12 15:45.13: BlueDragon has been successfully shutdown
