@@ -25,7 +25,7 @@ Clone this repo.
 Download OpenBD Desktop and point it at the src/main/webapp folder and check
 off "Provision Web App with OpenBD latest Engine". You can also check off "Enable Admin Console"
 if you want that (you generally do). Now hit "Start Web App" and your server should be running
-at http://localhost:8080/. 
+at http://localhost:8080/. Stop your application before proceeding further.
 
 ## Deploy to Heroku
 
