@@ -59,7 +59,7 @@ Deploy your code:
            [INFO] Scanning for projects...
            [INFO]                                                                         
            [INFO] ------------------------------------------------------------------------
-           [INFO] Building petclinic 0.1.0.BUILD-SNAPSHOT
+           [INFO] Building xxx 0.1.0.BUILD-SNAPSHOT
            [INFO] ------------------------------------------------------------------------
            ...
            [INFO] ------------------------------------------------------------------------
