@@ -1,1 +1,1 @@
-<html><body><h1>OpenBD Server Ready</h1><cfdump var='#cgi#'></body></html>
+<html><body><h1>OpenBD Server Ready</h1><cfdump/></body></html>
