@@ -14,6 +14,7 @@ to do it on their side.
 * [Java VM](http://www.java.com/en/download/index.jsp)
 * [Heroku Toolbelt](https://toolbelt.heroku.com/) (includes Git and Foreman)
 * [OpenBD Desktop](http://openbd.org/downloads/)
+* Basic knowledge of Git is assumed. If you need help, go [here](http://githowto.com/)
 
 ## The Easy Way
 
