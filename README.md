@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Deploying an OpenBD (Open BlueDragon) Web Application on Heroku via Jetty Runner
 
 ### Preface
@@ -224,3 +225,7 @@ build. Heroku needs your pom.xml and Procfile in order to deploy and run your ap
 # Deploy your Application to Heroku
 
 Read the "easy" instructions at the top of this file.
+=======
+openbd-heroku
+=============
+>>>>>>> b8f947423ed71822a027bc56353c08d7492940b3
