@@ -19,7 +19,7 @@ to do it on their side.
 
 Clone this repo. 
 
-    :::term
+    ```
     $ git clone git@github.com:heathprovost/openbd-heroku.git
 
 
@@ -32,14 +32,14 @@ at http://localhost:8080/.
 
 The first thing to do is commit your project into git if you haven't already.
 
-    :::term
+    ```
     $ git init
     $ git add .
     $ git commit -m "Ready to deploy"
 
 Create the Heroku App (using the Cedar stack):
 
-    :::term
+    ```
     $ heroku create --stack cedar my-app-name
     Creating my-app-name... done, stack is cedar
     http://my-app-name.herokuapp.com/ | git@heroku.com:my-app-name.git
@@ -47,7 +47,7 @@ Create the Heroku App (using the Cedar stack):
 
 Deploy your code:
 
-    :::term
+    ```
     $ git push heroku master
     Counting objects: xxx, done.
     Delta compression using up to 4 threads.
@@ -82,7 +82,7 @@ Deploy your code:
 
 Your app should be up and running on Heroku. Open it in your browser with:
 
-    :::term  
+    ```  
     $ heroku open
 
 ## The Hard Way
@@ -97,7 +97,7 @@ Runner is essentially a generalized, pre-configured Jetty Server packaged in a w
 allows you to simply and easily launch Jetty and run a specified war file, in this case
 OpenBD itself. So if you do something like this: 
 
-    :::term
+    ```
     $ java -jar jetty-runner.jar application.war
 
 Jetty Runner will launch a Jetty instance with the given war deployed to it.
@@ -106,7 +106,7 @@ Jetty Runner will launch a Jetty instance with the given war deployed to it.
 
 The first thing you want to do is use Maven to initialize a new project:
 
-    :::term
+    ```
     $ mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp
     ...
     [INFO] Generating project in Interactive mode
@@ -156,7 +156,7 @@ but hopefully in the future this will be possible. For now, add the following to
 Heroku uses Foreman to launch application. You will need to create a Procfile to the root of your project in
 order to tell Heroku how to run your application. The contents of this file should be:
 
-		:::term
+		```
 		web: java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target/*.war
 
 ## Add a .gitignore file
@@ -165,7 +165,7 @@ Maven will create a folder called target that holds all your build dependencies 
 don't want this in revision control, so create a .gitignore file in the root of your project containing the
 following
 
-		:::term
+		```
 		target
 
 ## Add OpenBD and Build your App
@@ -173,23 +173,24 @@ following
 Since OpenBD itself is not available as a maven artifact, you will have to add it manually. To do this, download and unzip the OpenBD Standard J2EE WAR file (it has a war extension, but it is in fact a zip file). After
 decompressing it, you will see something like this:
 
-openbd
--- bluedragon
--- manual
--- WEB-INF
--- index.cfm
+		```
+		openbd
+		-- bluedragon
+		-- manual
+		-- WEB-INF
+		-- index.cfm
 
 You will want to copy the contents of the openbd folder to src/main/webapp. You should also either delete the
 manual folder, or add it to your .gitignore so that is doesn't get deployed to heroku later on.
 
 To build your application simply run:
 
-    :::term
+    ```
     $ mvn package
 
 And then run your app using the java command:
 
-    :::term
+    ```
     $ java -jar target/dependency/jetty-runner.jar target/*.war
 
 That's it. Your application should be running locally on port 8080. 
