@@ -142,7 +142,36 @@ but hopefully in the future this will be possible. For now, add the following to
 	            </execution>
 	        </executions>
 	      </plugin>
-	    </plugins>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>2.4.1</version>
+          <configuration>
+            <filesets>
+              <fileset>
+                <directory>target/</directory>
+                <includes>
+                  <include>**/*</include>
+                </includes>
+                <excludes>
+                  <exclude>dependency/*.jar</exclude>
+                  <exclude>*.war</exclude>
+                </excludes>
+                <followSymlinks>false</followSymlinks>
+              </fileset>
+            </filesets>
+            <excludeDefaultDirectories>true</excludeDefaultDirectories>
+          </configuration>
+          <executions>
+            <execution>
+              <id>auto-clean</id>
+              <phase>install</phase>
+              <goals>
+                <goal>clean</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>      
+      </plugins>
     </build>
 
 Note: There is some additional customization in the pom.xml file in this repo to make it easier to use for developers who are not going to use maven at all for their dependency management, and just want a way to
