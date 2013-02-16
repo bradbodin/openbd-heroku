@@ -159,6 +159,15 @@ order to tell Heroku how to run your application. The contents of this file shou
 		:::term
 		web: java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target/*.war
 
+## Add a .gitignore file
+
+Maven will create a folder called target that holds all your build dependencies and whatnot. You generally
+don't want this in revision control, so create a .gitignore file in the root of your project containing the
+following
+
+		:::term
+		target
+
 ## Add OpenBD and Build your App
 
 Since OpenBD itself is not available as a maven artifact, you will have to add it manually. To do this, download and unzip the OpenBD Standard J2EE WAR file (it has a war extension, but it is in fact a zip file). After
@@ -185,7 +194,8 @@ And then run your app using the java command:
 
 That's it. Your application should be running locally on port 8080. 
 
-Alternatively, you can download and run OpenBD Desktop in order to run your application for testing locally. All you have to do is point it to your webapp folder. I would actually recommend this method, as if you use OpenBD Desktop you no longer need to use maven or jetty-runner at all locally, it is only needed to allow running on Heroku. 
+Alternatively, you can download and run OpenBD Desktop in order to run your application for testing locally. All you have to do is point it to your webapp folder. I would actually recommend this method, as if you use OpenBD Desktop you no longer need to use maven or jetty-runner at all locally, it is only needed to allow running on Heroku. Once you have the basic skeleton generated, you can just use it as a project template for each app you
+build. Heroku needs your pom.xml and Procfile in order to deploy and run your app, but you don't actually need them for local development.
 
 # Deploy your Application to Heroku
 
