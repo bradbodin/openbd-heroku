@@ -23,7 +23,7 @@ Clone this repo.
     $ git clone git@github.com:heathprovost/openbd-heroku.git
 
 
-Download OpenBD Desktop and point it at the src/main/webapp folder and check
+Download OpenBD Desktop and point it at the project folder and check
 off "Provision Web App with OpenBD latest Engine". You can also check off "Enable Admin Console"
 if you want that (you generally do). Now hit "Start Web App" and your server should be running
 at http://localhost:8080/. Stop your application before proceeding further.
@@ -144,6 +144,11 @@ but hopefully in the future this will be possible. For now, add the following to
 	      </plugin>
 	    </plugins>
     </build>
+
+Note: There is some additional customization in the pom.xml file in this repo to make it easier to use for developers who are not going to use maven at all for their dependency management, and just want a way to
+deploy to Heroku. Primarily these modifications collapse the directory structure so that maven sees the
+root of the project folder as src/main/webapp, with some exclusions to make the build work correctly. If 
+you actually plan on using maven, I don't recommend doing any of that - just do something like the above.
 
 ## Add a Procfile
 

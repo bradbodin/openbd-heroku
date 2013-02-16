@@ -1,1 +1,0 @@
-This is where your OpenBD Application goes. It is safe to delete this file.

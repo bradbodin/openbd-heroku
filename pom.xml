@@ -9,7 +9,17 @@
   <url>http://maven.apache.org</url>
   <build>
     <finalName>openbd</finalName>
+    <sourceDirectory>${basedir}</sourceDirectory>
     <plugins>
+      <plugin> 
+        <groupId>org.apache.maven.plugins</groupId> 
+        <artifactId>maven-war-plugin</artifactId> 
+        <configuration> 
+          <warSourceDirectory>${basedir}</warSourceDirectory>
+          <packagingExcludes>WEB-INF/classes,META-INF</packagingExcludes>
+          <excludes>**/.git/**,**/.gitignore,target/**,pom.xml,Procfile,WEB-INF/bluedragon/work/**,WEB-INF/bluedragon/bluedragon.xml.bak.*</excludes>
+        </configuration> 
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
