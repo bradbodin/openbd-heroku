@@ -87,7 +87,8 @@ Your app should be up and running on Heroku. Open it in your browser with:
 
 ## The Hard Way
 
-If you prefer to do it yourself from scratch. 
+If you prefer to do it yourself from scratch. You will need Maven 3 installed to do this.
+If you run on OSX you probably already have it. Otherwise you can get it [here](http://maven.apache.org/download.cgi).
 
 Heroku uses Maven for doing Java deployments. In order to do this, it looks for a file
 called pom.xml in the root of your project. The approach we use here is to have Heroku
